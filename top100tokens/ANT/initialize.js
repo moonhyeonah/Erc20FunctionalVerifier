@@ -1,0 +1,9 @@
+let TOKENNAME = 'ANT';
+let TOTALSUPPLY = web3.utils.toBN('0');
+let MAXNO = web3.utils.toBN('340282366920938463463374607431768211455');
+
+module.exports={
+  TOKENNAME,
+  TOTALSUPPLY,
+  MAXNO
+};
