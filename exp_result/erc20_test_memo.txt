@@ -1,0 +1,295 @@
+
+[각 경우에 no event 확인]
+
+TR1
+ - 90개: 표준일치
+ - 6개:
+    1) return이 없어서 fail: 6개  (이름: Tether,BNB,INO,OMG,KCS, ERC20,)
+       *  API 인터페이스가 확인 가능 (return타입이 void)
+       
+   		 (X) 2) revert (TRUE가 아니라)여서 fail: 0개  (이름: ??)
+
+TR1-1
+ - TR1과 동일한 결과
+
+TR2 (value=0)
+ - 76개: 표준일치
+ - 20개:
+    1) return이 없어서 fail: 6개 (이름: Tether,BNB,INO,OMG,KCS, ERC20,)
+    
+    2) value=0 처리 안해서 fail: 12개
+       * revert 해서 fail: 3개 (THETA,LEND,WIC, )
+       * false 처리해서 fail: 9개 (VEN,BAT,BRC,DIVX,BTM, GNT,NULS,HPT,RPL )
+
+    3) no event해서 fail: 2개 (이름: SNT,ANT, )
+
+TR2-1
+  - TR2와 동일
+
+TR3 (overflow)
+  - 5개 제안한 기준 일치: (HT,ZRX,BRC,IOST,DIVX)
+  - 91개
+    1) return이 없어 fail: 6개 (이름: Tether,BNB,INO,OMG,KCS, ERC20,)
+
+    2) revert해서 fail (업계 표준과 제안 기준 불일치): 74개 
+      (대표:BNB,LINK,LEO,HT,USD, MKR,VEN,HEDG,CRO,OKB,  ZIL,KNC,REP,ENJ,INB, VEST,TUSD,HUSD,DAI,LRC,
+            HOT,SAI,QNT,REN,XIN, MCO,DX,MATIC,NEXO,NMR, WAX,Seele,CENNZ,BNT,MANA, CEL,ELF,CHZ,BNK,NOAH,
+            RLC,DATA,RCN,CVT,WIC, EDO,DRGN,NPXS,EURS,INS, SXP,ORBS,BCZERO,BTU,HPT, BAND,QBIT,CTXC,OCEAN,IOTX,
+            STORJ,ONE,BTMX,BigONE,KBC, ENG,POLY,RSR,PAX,BUSD, AION,PAXG,DGTX,FUN)
+
+    3) 코드 있지만 bug로 TRUE 리턴해서 잘못처리하여 fail: 2개 (대표: SNT,ANT, )
+    
+    4) 아예 코드가 없어 정상처리 (overflow 처리 안함): 9개 (대표:BAT,BTM,GNT,POWR,CRPT, GNO,NULS,WTC,RPL )
+
+TR4 (throw)
+  - 70개 pass 
+    
+  - 26개 fail 
+
+    1) return이 없어 fail(revert하므로 테스트는 성공으로 처리): 6개 (이름: Tether,BNB,INO,OMG,KCS, ERC20,)
+
+    2) (throw가 아니라) FALSE를 리턴해서 fail: 20개 (HT,VEN,BAT,ZRX,BRC, SNT,IOST,DIVX,BTM,CEL, GNT,POWR,RCN,EURS,INS, NULS,HPT,RPL,AION,FUN)
+
+TR4-1
+  - TR4와 동일
+
+TR5
+  - TR4와 동일. sender가 invalid하면 그것의 balance가 0으로 간주하는 것으로 판단됨
+
+
+
+TF1
+  - 92개 pass
+  - 4개
+    1)
+       1-1) api 없음: 2개 (KCS,GNT)
+       1-2) return이 없어 fail: 2개 (이름: Tether,OMG,)
+  
+   =====> C1 : 4, C2 : 0
+
+TF2 (value =0)
+  - 77개 pass
+
+  - 19개
+
+    1)
+       1-1) api 없음: 2개 (KCS,GNT)
+       1-2) return이 없어 fail: 2개 (이름: Tether,OMG,)
+    
+    2) no event이어서 fail: 2개 (이름: SNT,ANT, )
+
+    3) value=0 처리 하지 않아서 fail: 13개 
+       * revert 해서 fail: 5개 (BNB,INO,THETA,LEND,ERC20, )
+       * false 처리해서 fail: 8개 (VEN,BAT,BRC,DIVX,BTM, NULS,HPT,RPL)
+
+   =====> C1:4, C2:15
+
+TF2-1
+  - TF2와 동일
+
+TF3 (throw)
+  - 73개 pass
+ 
+  - 23개 fail
+    1)
+      1-1) api 없음(revert함으로 성공 테스트 성공 처리): 2개 (KCS,GNT)
+      1-2) return이 없어 fail(revert함으로 성공 테스트 성공 처리): 2개 (이름: Tether,OMG,)
+   
+    2) (revert가 아니라) false를 리턴해서 fail: 19개 (대표: HT,VEN,BAT,ZRX,BRC, SNT,IOST,DIVX,BTM,CEL, POWR,RCN,EURS,INS,NULS, HPT,RPL,AION,FUN)
+
+   ======> C1:4, C2:19
+
+TF3-1
+  - TF3와 동일
+
+TF4 (overflow)
+  - 4개 pass (HT,ZRX,BRC,IOST,)
+
+  - 92개 fail
+    1)
+      1-1) api 없음: 2개 (KCS,GNT,)
+      1-2) return이 없어 fail: 2개 (이름: Tether,OMG,)
+    
+    2) revert해서 fail (업계 표준과 제안 기준 불일치): 77개 
+      (대표:BNB,LINK,LEO,HT,USD,       MKR,VEN,HEDG,CRO,INO,     OKB,ZIL,KNC,REP,ENJ,      INB,VEST,TUSD,HUSD,DAI,
+            LRC,HOT,SAI,QNT,REN,       XIN,MCO,DX,KCS,MATIC,     NEXO,NMR,WAX,Seele,CENNZ, BNT,MANA,CEL,ERC20,ELF,
+            CHZ,BNK,NOAH,RLC,DATA,     RCN,CVT,WIC,EDO,DRGN,     NPXS,EURS,INS,SXP,ORBS,   BCZERO,BTU,HPT,BAND,QBIT,
+            CTXC,OCEAN,IOTX,STORJ,ONE, BTMX,BigONE,KBC,ENG,POLY, RSR, PAX,BUSD,AION,PAXG,DGTX,FUN)
+
+    3) 코드 있지만 bug로 TRUE 리턴해서 잘못처리하여 fail: 2개 (대표: SNT,ANT, )
+
+    4) 아예 코드가 없어 정상처리 overflow 처리 안함: 9개 (대표:BAT,DIVX,BTM,POWR,CRPT, GNO,NULS,WTC,RPL )
+
+   ======> C1:4, C2:88
+
+TF5 (throw)
+  - 73개 pass
+ 
+  - 23개 fail
+    1)
+       1-1) api 없음: 2개 (KCS,GNT)   
+       1-2) return이 없어 fail(revert함으로 성공 테스트 성공 처리): 2개 (이름: Tether,OMG,)
+
+    2) (revert가 아니라) false를 리턴해서 fail: 19개 (대표: HT,VEN,BAT,ZRX,BRC, SNT,IOST,DIVX,BTM,CEL, POWR,RCN,EURS,INS,NULS, HPT,RPL,AION,FUN)
+
+   =======> C1:4, C2:19 
+
+TF5-1
+  - TF5와 동일
+
+TF6
+  - TF5와 동일
+
+
+AP1
+
+  - 89개 pass
+  - 7개
+  
+    1) API 오류
+       1-1) api 자체가 없음: 2개 (이름: KCS,GNT,)
+       1-2) return이 없어 fail: 2개 (이름: Tether,OMG,)
+    
+    2) no event : 3개 (BNB,INO,ERC20,)
+
+   =======> C1:4, C2:3
+
+AP1-1
+  - 70개 pass
+  - 26개 fail 
+  
+  - AP1과 동일
+
+  - [중요] AP1와 AP1-1의 차이가 나는 경우: 19개 
+    (이름: LEO,THETA,KNC,ENJ,LEND, SNT,XIN,MCO,NMR,BNT, MANA,NOAH,DATA,EDO,ANT, NPXS,STORJ,AION,FUN  )  <=== !!!
+       TC는 0으로 초기화하고 AP1을 실행,
+           0으로 초기화하지 않고 AP1-1을 실행
+	   특정 token에서 0으로 초기화 된 경우만 approve하도록 작성되어 fail!!
+
+       (ERC20 표준에서 클라이언트로 하여금 0으로 초기하고 approve하도록 권장-should?)
+        * 이 권장 사항은 transaction ordering 취약점을 막기 위해 필요
+
+   =======> C1:4, C2:3
+
+AP2
+  - 87개 pass
+  - 9개 fail
+ 
+    1) API 오류 (4)
+       1-1) API가 없어서 fail: 2개 (이름: KCS,GNT, )
+       1-2) return이 없어 fail: 2개 (이름: Tether,OMG,)
+
+    2) FALSE 대신 revert를 시켜서 fail: 2개 (VEST, WIC)
+    3) no event : 3개 (BNB,INO,ERC20,)
+
+   =======> C1:4, C2:5
+
+AP3
+  - AP2와 동일
+
+
+AL1
+  - 95개 pass
+  - 1개 
+
+    1) API 없어서 fail: 1개 (GNT)
+
+AL2
+  - AL1과 동일
+
+---------------------------------------------------------------
+API에 modifier가 붙은 경우이거나 require로 조건을 건 경우가 있다.
+
+ - API 동일 여부를 판단할 때는 modifier와 require를 고려하지 않는다!
+
+ - 그룹
+  --- 25개 테스트 패스
+    * 36개: LINK,USD,MKR,HEDG,INB,     TUSD,DAI,LRC,SAI,QNT, 
+	    REN,DX,NEXO,WAX,CENNZ,     CHZ,BNK,CVT,DRGN,SXP,
+            ORBS,BCZERO,BTU,QBIT,CTXC, IOTX,ONE,BTMX,BigONE,KBC,
+            ENG,POLY,PAX,BUSD,PAXG,    DGTX
+
+    * 1개: approve balance보다 적은 경우 revert (VEST)
+    * 2개: overflow 검사 안해서 다름: GNO,WTC
+    * 13개: (테스트 가능하도록 modifier 변경함:
+           # private->public  소스 코드 수정 (5개) (이름: HUSD,MATIC,BAND,OCEAN,RSR,)
+	   # test하도록 소스 코드 수정 (1개) (이름: REP,)
+	   # modifier를 통과하여 test하도록 target에서 변수 설정 (7개) (이름: CRO,OKB,ZIL,HOT,Seele, ELF,RLC,)
+    * 1개: (테스트 가능하도록 modifier 변경함 & overflow 검사 안해서 다름:CRPT
+  --- 24개 테스트 패스	   
+    * 13 : AP1에서 0검사를 강제화해서 다름 
+          (이름: LEO,KNC,ENJ,XIN,MCO, NMR,BNT,MANA,NOAH,DATA, EDO,NPXS,STORJ)
+
+   ====> 요점은, 38+9=47개가 동일한 동작을 갖는 ERC20 토큰이다!! 업계 표준이다!!! (X)
+                 32+13=45개가 동일한 동작을 갖는 ERC20 토큰이다!! 업계 표준이다!!!
+
+   ======> 36 + 13 = 49개가 업계 표준
+---------------------------------------------------------------
+# modifier를 통과하여 test하도록 : VEN,MCO,DATA,EDO,
+LEND(enableTransfers = true; 로 설정해서 테스트) 
+DIVX(totalReceivedWei = 5 * (10**3) * 10**decimals; 로 처리)
+GNT(funding = true;이면 transfer안 됨, ==> 변경)
+EURS(calculateFee() 부분에서 transfer()/From() 테스트 실패, fee=0으로 하면,
+	_feeCollector에게 0을 보내는 Transfer()이벤트도 같이 발생 )
+INS( private allowances을 public으로 수정 후 테스트)
+GNO(생성자 통과하게 입력 설정 GnosisToken(address(1), owners, tokens))
+---------------------------------------------------------------
+token 장부를 저장하는 자료 구조
+
+  - mapping (address -> uint)구조가 아니라
+    mapping (address -> 구조체 배열)구조!
+         LEO: CheckPoint[] uint256  (balacne 타입)
+	 SNT: CheckPoint[] uint128
+	 ANT: CheckPoint[] uint128
+	 VeChain: Account 구조체 unit112
+	 BNK: AddressBalanceInfoStructure 구조체   unit256 
+
+  - ERC20 표준 api에서 balance를 uint256으로 처리하는데
+    gas 소모를 줄이는 등의 이유로 uint256을 사용하지 않아 overflow가 실패한 bug 사례 발견
+      ===> ANT, SNT !!!
+      
+  - 구조체에 balance외에 블록 number 등을 추가로 포함
+  
+  - 위와 같이 balance 외의 정보를 저장하는 자료구조를 사용하면
+    Target에서 setBalance에서 balance 이외에 정보가 필요한 경우 있다.
+    이때 소스 코드에 있는 updateValueAtNow()와 같은 함수를 사용했어야 했다.
+
+---------------------------------------------------------------
+# transferFrom()에서 allowance 줄이는 것을 approve()호출로 처리해서 Approval이벤트 발생
+
+HUSD,MATIC,BAND,OCEAN
+---------------------------------------------------------------
+# transfer 이벤트 2개 발생
+BNK(ERC223.Transfer(from,to,value,data) 이벤트와 ERC20.Transfer(from,to,value) 두개가 발생)
+POLY(Ambiguous event)
+---------------------------------------------------------------
+에러 원인 분류
+
+transfer()	리턴 없음
+	0 value 전송을 에러처리
+	0 value 전송은 Transfer() 이벤트 없음
+	overflow 처리 기준이 없음
+	overflow 처리 안함
+	sender balance가 보내려는 값보다 적을 경우 throw 처리 안함
+	balance 자료구조가 다른경우?
+	
+transferFrom()	리턴 없음
+	transferFrom() 없음
+	0 value 전송을 에러처리
+	0 value 전송은 Transfer() 이벤트 없음   (ex. ANT)
+	overflow 처리 기준이 없음
+	overflow 처리 안함
+	caller's allowance by from가 보내려는 value보다 적을 경우 throw 처리 안함
+	sender balance가 보내려는 값보다 적을 경우 throw 처리 안함
+	
+approve()
+ - 리턴 없음
+ - Approval()이벤트 없음
+ - from balance가 approve값보다 작은 경우 기준 없음
+ - approve() 없음
+	
+allowance()	allowance() 없음 ==> 1 case   (ex. GNT)
+	
+totalSupply()	truffle이 해결 못하는 큰 숫자 이외에는 처리
+	
+balanceOf()	
