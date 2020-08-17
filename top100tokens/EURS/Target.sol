@@ -5,7 +5,7 @@ import "./EURS.sol";
 contract Target is EURSToken{
 
     function Target() public EURSToken(address(0)) {
-        
+        fixedFee = 0;
     }
     
     function setBalance(address _owner, uint256 _value) public returns (bool success) {

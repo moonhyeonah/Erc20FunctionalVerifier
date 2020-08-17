@@ -446,10 +446,10 @@ contract EURSToken is AbstractToken {
       BLACK_LIST_FLAG)
       return false;
     else {
-      uint256 fee = 0;
-//        (addressFlags [msg.sender] | addressFlags [_to]) & ZERO_FEE_FLAG == ZERO_FEE_FLAG ?
-//          0 :
-//          calculateFee (_value);
+      uint256 fee =
+        (addressFlags [msg.sender] | addressFlags [_to]) & ZERO_FEE_FLAG == ZERO_FEE_FLAG ?
+          0 :
+          calculateFee (_value);
 
       if (_value <= accounts [msg.sender] &&
           fee <= safeSub (accounts [msg.sender], _value)) {
@@ -477,10 +477,10 @@ contract EURSToken is AbstractToken {
       BLACK_LIST_FLAG)
       return false;
     else {
-      uint256 fee = 0;
-//        (addressFlags [_from] | addressFlags [_to]) & ZERO_FEE_FLAG == ZERO_FEE_FLAG ?
-//          0 :
-//          calculateFee (_value);
+      uint256 fee =
+        (addressFlags [_from] | addressFlags [_to]) & ZERO_FEE_FLAG == ZERO_FEE_FLAG ?
+          0 :
+          calculateFee (_value);
 
       if (_value <= allowances [_from][msg.sender] &&
           fee <= safeSub (allowances [_from][msg.sender], _value) &&
