@@ -1,0 +1,107 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% The top 100 tokens  %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+1	Tether USD (USDT)	Digital money for a digital age.
+2	BNB (BNB)	"Binance aims to build a world-class crypto exchange, powering the future
+of crypto finance."
+3	ChainLink Token (LINK)	A blockchain-based middleware, acting as a bridge between cryptocurrency smart contracts, data feeds, APIs, and traditional bank account payments.
+4	Bitfinex LEO Token (LEO)	A utility token designed to empower the Bitfinex community and provide utility for those seeking to maximize the output and capabilities of the Bitfinex trading platform.
+5	HuobiToken (HT)	Huobi Global is a world-leading cryptocurrency financial services group.
+6	USD Coin (USDC)	USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.
+7	Maker (MKR)	Maker is a Decentralized Autonomous Organization that creates and insures the Dai stablecoin on the Ethereum blockchain
+8	VeChain (VEN)	Aims to connect blockchain technology to the real world through advanced IoT integration.
+9	HEDG	HedgeTrade is a platform where traders share their knowledge. Traders post predictions into a smart contract-powered Blueprint that users can purchase or unlock.
+10	BAT (BAT)	The Basic Attention Token is a new token for the digital advertising industry.
+11	Crypto.com Coin (CRO)	Pay and be paid in crypto anywhere, with any crypto, for free.
+12	Ino Coin (INO)	InoCoin is a decentralized cryptocurrency built with the sole mission of helping new businesses with funding.
+13	OKB (OKB)	Digital Asset Exchange
+14	Zilliqa (ZIL)	Zilliqa is a high-throughput public blockchain platform designed to scale to thousands of transactions per second.
+15	ZRX (ZRX)	0x is an open, permissionless protocol allowing for tokens to be traded on the Ethereum blockchain.
+16	Paxos Standard (PAX)	Paxos Standard is regulated crypto asset fully collateralized 1:1 by the U.S. dollar, as approved and regulated by the NYDFS.
+17	OMG Network (OMG)	OmiseGO (OMG) is a public Ethereum-based financial technology for use in mainstream digital wallets
+18	Theta Token (THETA)	A decentralized peer-to-peer network that aims to offer improved video delivery at lower costs.
+19	KyberNetwork (KNC)	KyberNetwork is a new system that allows the exchange and conversion of digital assets.
+20	Synthetix Network Token (SNX)	The Synthetix Network Token (SNX) is the native token of Synthetix, a synthetic asset (Synth) issuance protocol built on Ethereum. The SNX token is used as collateral to issue Synths, ERC-20 tokens that track the price of assets like gold, silver, oil, and Bitcoin.
+21	Binance USD (BUSD)	Binance USD (BUSD) is a dollar-backed stablecoin issued and custodied by Paxos Trust Company, and regulated by the New York State Department of Financial Services. BUSD is available directly for sale 1:1 with USD on Paxos.com and will be listed for trading on Binance.
+22	Reputation (REP)	Augur combines the magic of prediction markets with the power of a decentralized network to create a stunningly accurate forecasting tool
+23	EnjinCoin (ENJ)	Customizable cryptocurrency and virtual goods platform used for gaming.
+24	Insight Chain (INB)	Insight Chain is an EOS-based data ecosystem on the blockchain, and works on building Wall Street-like financial order in the blockchain domain.
+25	Vestchain (VEST)	VestChain is a blockchain platform designed to tackle the problems inherent to the existing blockchains such as expandability and time needed for confirmation.
+26	TrueUSD (TUSD)	A regulated, exchange-independent stablecoin backed 1-for-1 with US Dollars.
+27	HUSD (HUSD)	HUSD is an ERC-20 token that is 1:1 ratio pegged with USD. It was issued by Stable Universal, an entity that follows US regulations.
+28	EthLend (LEND)	Aave is an open source and non-custodial protocol to earn interest on deposits and borrow assets. It also features access to highly innovative flash loans, which let developers borrow instantly and easily; no collateral needed. With 16 different assets, 5 of which are stablecoins.
+29	Dai Stablecoin (DAI)	Multi-Collateral Dai brings about a lot of new and exciting features, such as support for new CDP collateral types and Dai savings rate.
+30	LoopringCoin V2 (LRC)	Loopring is a DEX protocol offering orderbook-based trading infrastructure, zero-knowledge proof, and an auction protocol called Open-Ended Dutch Auction Exchange (Oedax).
+31	Baer Chain (BRC)	
+32	HoloToken (HOT)	Holo is a decentralized hosting platform based on Holochain, designed to be a scalable development framework for distributed applications.
+33	Sai Stablecoin v1.0 (SAI)	Sai is an asset-backed, hard currency for the 21st century. The first decentralized stablecoin on the Ethereum blockchain.
+34	StatusNetwork (SNT)	Status is an open source messaging platform and mobile browser to interact with decentralized applications that run on the Ethereum Network.
+35	Quant (QNT)	Blockchain operating system that connects the world’s networks and facilitates the development of multi-chain applications.
+36	ZBToken (ZB)	Blockchain assets of financial service provider.
+37	IOSToken (IOST)	A Secure & Scalable Blockchain for Smart Services
+38	Republic (REN)	Ren is a private and interoperable liquidity layer for decentralized finance. Freely move value between blockchains and transfer tokens in zero-knowledge while maintaining complete privacy.
+39	Mixin (XIN)	A TEE powered BFT-DAG network that connects all existing blockchains
+40	MCO (MCO)	Crypto.com, the pioneering payments and cryptocurrency platform, seeks to accelerate the world’s transition to cryptocurrency.
+41	Divi Exchange Token (DIVX)	Digital Currency
+42	DxChain Token (DX)	Provide solutions to big data problems
+43	Bytom (BTM)	Transfer assets from atomic world to byteworld
+44	Kucoin Shares (KCS)	KuCoin Shares (KCS) is the token of the KuCoin exchange.
+45	Matic Token (MATIC)	A Matic network brings a massive scale to Ethereum using an adapted version of Plasma with PoS-based side chains.
+46	Nexo (NEXO)	Instant crypto-backed loans
+47	Numeraire (NMR)	NMR is the scarcity token at the core of the Erasure protocol. NMR cannot be minted, and its core use is for staking and burning. The Erasure protocol brings about negative incentives to any website on the Internet by providing users with economic skin in the game and punishing bad actors.
+48	WAX Token (WAX)	Global Decentralized Marketplace for Virtual Assets.
+49	SeeleToken (Seele)	Seele created "Neural Consensus Algorithm." It transforms the consensus problem into an asynchronous request, processing and sorting data in a large-scale environment based on "micro-real numbers."
+50	Bancor (BNT)	The Bancor protocol is a standard for a new generation of cryptocurrencies called smart tokens
+51	Centrality Token (CENNZ)	Centrality is a graph theory term – a point in a decentralized system that unites to other points.
+52	UniBright (UBT)	The unified framework for blockchain based business integration
+53	Celsius (CEL)	A new way to earn, borrow, and pay on blockchain.
+54	Decentraland (MANA)	Decentraland is a virtual reality platform powered by the Ethereum blockchain. Users can create, experience, and monetize content and applications
+55	Golem (GNT)	Golem is going to create the first decentralized global market for computing power
+56	ELF (ELF)	"Elf is a decentralized self-evolving cloud computing blockchain
+network that aims to provide a high-performance platform for a commercial adoption of blockchain."
+57	SwissBorg (CHSB)	Crypto Wealth Management.
+58	chiliZ (CHZ)	Chiliz is the sports and fan engagement blockchain platform that has signed leading sports teams.
+59	AION (AION)	A multi-tier blockchain system designed to address unsolved questions of scalability, privacy, and interoperability in blockchain networks
+60	ERC20 (ERC20)	ERC20 is a payment option and a crypto-money.
+61	Paxos Gold (PAXG)	PAX Gold (PAXG) tokens, each representing one fine troy ounce of an LBMA-certified, London Good Delivery physical gold bar, secured in Brink vaults.
+62	PowerLedger (POWR)	Power Ledger is a peer-to-peer marketplace for renewable energy.
+63	Banker Token (BNK)	Banking for the blockchain era.
+64	NOAHCOIN (NOAH)	Aims to build an ecosystem from digital wallets to beach resorts and even entire cities - all powered by Noah Coin.
+65	RLC (RLC)	Blockchain-based distributed cloud computing
+66	DATAcoin (DATA)	Streamer is building a world leading marketplace and decentralized network for real-time data.
+67	Crypterium (CRPT)	Crypterium is building a mobile app that lets users spend cryptocurrency in everyday life.
+68	RipioCreditNetwork (RCN)	The Ripio Credit Network is a global credit network based on cosigned smart contracts and blockchain technology that connects lenders and borrowers located anywhere in the world and on any currency
+69	CyberVeinToken (CVT)	A universal network of decentralized databases
+70	WaykiCoin (WIC)	WaykiChain aims to build a commercial blockchain 3.0 public chain, provide enterprise-level blockchain infrastructure and industry solutions, and create a new business model in the new era.
+71	Eidoo (EDO)	Aims to be a fast, easy, and not only a multicurrency wallet and hybrid exchange.
+72	Dragon (DRGN)	Dragonchain simplifies the integration of real business applications onto a blockchain.
+73	Pundi X Token (NPXS)	To provide developers with increased use cases and a token user base by supporting offline and online payments of their custom tokens in Pundi X‘s ecosystem
+74	STASIS EURS Token (EURS)	EURS token is a virtual financial asset that is designed to digitally mirror the EURO under the condition that its value is tied to the value of its collateral.
+75	Swipe (SXP)	Swipe is a cryptocurrency wallet and debit card that enables users to spend their cryptocurrencies over the world.
+76	Aragon (ANT)	Creates and manages unstoppable organizations. Aragon lets you manage entire organizations using the blockchain. This makes Aragon organizations more efficient than their traditional counterparts.
+77	Insolar (INS)	Insolar is building an open-source enterprise-grade blockchain platform to enable seamless interactions between companies and new growth opportunities powered by a distributed trust
+78	Gnosis (GNO)	Crowd Sourced Wisdom - The next generation blockchain network. Speculates on anything with an easy-to-use prediction market
+79	Orbs (ORBS)	Orbs is a public blockchain built for the needs of apps with millions of users, from SLAs to adjustable fee models with on-demand capacity.
+80	Buggyra Coin Zero (BCZERO)	BCZERO will act as the payment platform for racing series in China, India, Europe, and South America and for Sponsorships and Fans.
+81	Nuls (NULS)	NULS is a global blockchain open-source project, which is a highly customizable modular blockchain infrastructure consisting of a microkernel and functional modules.
+82	DigitexFutures (DGTX)	DGTX token is a protocol token whose value derives from its utility as a vehicle for commission-free trading of futures contracts on the price of Bitcoin, Ethereum, and Litecoin against the US Dollar.
+83	BTU Protocol (BTU)	Decentralized Booking Protocol
+84	HuobiPoolToken (HPT)	
+85	BandToken (BAND)	A data governance framework for Web3.0 applications operating as an open-source standard for the decentralized management of data. The Band protocol connects smart contracts with trusted off-chain information, provided through community-curated oracle data providers.
+86	Cortex Coin (CTXC)	Decentralized AI autonomous system.
+87	Qubitica (QBIT)	A distributed blockchain enterprise.
+88	Walton (WTC)	Value Internet of Things (VIoT), constructs a perfect commercial ecosystem through the integration of the real world and blockchain.
+89	OceanToken (OCEAN)	An ecosystem for the data economy and associated services, with a tokenized service layer that securely exposes data, storage, computations, and algorithms for consumption.
+90	IoTeX Network (IOTX)	IoTeX is the next generation IoT-oriented blockchain platform with vast scalability, privacy, isolatability, and developability. IoTeX connects the physical world, block by block.
+91	Storj (STORJ)	Blockchain-based, end-to-end encrypted, distributed object storage, where only you have access to your data
+92	FunFair (FUN)	FunFair is a decentralized gaming platform powered by Ethereum smart contracts
+93	HarmonyOne (ONE)	A project to scale trust for billions of people and create a radically fair economy.
+94	BitMax token (BTMX)	Digital asset trading platform
+95	KaratBank Coin (KBC)	The mission of the KaratGold project is to create and develop a global infrastructure that will become a bridge between conventional and blockchain-based financial systems.
+96	BigONE Token (ONE)	Cryptocurrency exchange
+97	Polymath (POLY)	Polymath aims to enable securities to migrate to the blockchain.
+98	Enigma (ENG)	Enigma is a privacy protocol that enables truly decentralized applications and unlocks the value of blockchains.
+99	Rocket Pool (RPL)	Rocket Pool is a decentralized Ethereum Proof of Stake pool designed to be compatible with Casper.
+100	Reserve Rights (RSR)	A fluctuating protocol token that plays a role in stabilizing RSV and confers the cryptographic right to purchase excess reserve tokens as the network grows.
+
